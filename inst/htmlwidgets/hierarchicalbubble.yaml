@@ -1,0 +1,13 @@
+dependencies:
+  - name: d3
+    version: 4
+    src: htmlwidgets/lib/hb
+    script: d3.v4.min.js
+  - name: hierarchicalbubble_this_name_can_be_whatever_you_want
+    version: 0.0.1
+    src: htmlwidgets/lib/hb
+    script: hierarchicalbubble_d3code.js  
+    stylesheet: hierarchicalbubble_d3code.css 
+  - name: hierarchicalbubble_this_name_can_also_be_anything
+    version: 0.0.1
+    src: htmlwidgets

@@ -1,0 +1,24 @@
+Package: hierarchicalbubble
+Title: HTML widget that draws a hierarchical bubble chart
+Version: 0.1
+Authors@R: c(
+    person("Robin", "Linacre", email = "robinlinacre@hotmail.com",
+      role = c("aut", "cre"), comment = "R interface"))
+Description: A barebones html widget that demonstrates how you can hook R up to D3.js
+URL: https://github.com/RobinL
+Depends:
+    R (>= 3.1.0)
+Imports:
+    htmltools (>= 0.2.6),
+    htmlwidgets (>= 0.6),
+    jsonlite,
+    magrittr,
+    methods,
+    rmarkdown,
+    shiny
+Suggests:
+    knitr (>= 1.7)
+License: MIT 
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1

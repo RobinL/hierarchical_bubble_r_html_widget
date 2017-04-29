@@ -1,0 +1,21 @@
+#' Pipe graphics
+#'
+#' Like dplyr, ggvis also uses the pipe function, \code{\%>\%} to turn
+#' function composition into a series of imperative statements.
+#'
+#' @importFrom magrittr %>%
+#' @name %>%
+#' @rdname pipe
+#' @export
+#' @param lhs,rhs A visualisation and a function to apply to it
+
+NULL
+
+#' Ensure internval availability of magrittr to package
+#'
+#' @importFrom magrittr %<>%
+#' @name %<>%
+#' @importFrom magrittr %$%
+#' @name %$%
+
+NULL
