@@ -1,3 +1,5 @@
+#' A heirarchical bubble widget
+#'
 #' @export
 hierarchical_bubble <- function(data = list(), width = NULL, height = NULL, elementId = NULL) {
 

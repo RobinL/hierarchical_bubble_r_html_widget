@@ -12,6 +12,18 @@ function flatten(root) {
     return nodes; 
 }
 
+
+var formatSi = d3.format(".3s");
+
+function formatAbbreviation(x) {
+  var s = formatSi(x);
+  switch (s[s.length - 1]) {
+    case "G": return s.slice(0, -1) + "B";
+  }
+  return s;
+}
+
+
 function DataHolder() {
 
     var me = this 
@@ -243,12 +255,12 @@ function HierarchicalBubble(container) {
         rectangles = enterSelection.append("text")
             .text(function(d) {
 
-                return d.data.text.substring(0,16);
+                return d.data.text.substring(0,15);
             })
             .style("font-size", function(d) {
                 var r = Math.pow(d.data.value_normalised, 0.5) * constant.circle_scale  //Radius of circle
 
-                var text_length = d.data.text.length
+                var text_length = Math.min(d.data.text.length,16)
 
                 var size_div_scale = d3.scalePow().exponent(2).domain([1,7,16]).range([1,2.2,4.8])
                 
@@ -270,7 +282,7 @@ function HierarchicalBubble(container) {
         var currency_format = d3.format(",.1f")
         rectangles = enterSelection.append("text")
             .text(function(d) {
-                return "£" + currency_format(d.data.value) + "m";
+                return formatAbbreviation(d.data.value);
             })
             .style("font-size", function(d) {
                 var r = Math.pow(d.data.value_normalised, 0.5) * constant.circle_scale 

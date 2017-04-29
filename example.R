@@ -22,11 +22,11 @@ shinyApp(
     , 
   server = function(input, output) {
     
-    df <- generate_test_data()
-    df_l <- wide_to_long_hierarchy(df,colnames(df)[1:4] ,"val")
+    df <- hierarchicalbubble::generate_test_data()
+    df_l <- hierarchicalbubble::wide_to_long_hierarchy(df,colnames(df)[1:4] ,"val")
     df_l 
-    output$hb <- renderHB({
-      hierarchicalbubble::hierarchical_bubble(df_l)
+    output$hb <- hierarchicalbubble::renderHB({
+      hierarchicalbubble::hierarchical_bubble(df_l,width= 100, height = 100)
     })
     
   }

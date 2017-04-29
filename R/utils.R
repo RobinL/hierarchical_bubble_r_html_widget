@@ -16,7 +16,7 @@ generate_test_data <- function() {
     purrr::map(get_random) %>% 
     tibble::as_data_frame()
   
-  df["val"] <- runif(4)*100
+  df["val"] <- runif(4)*10000
   
   df
 }
@@ -27,7 +27,7 @@ generate_test_data()
 wide_to_long_hierarchy <- function(df, hierarchy_names, value_column) {
   
   output_df <- tibble::data_frame("id"=integer(), "parent"=integer(), "text"=character(), "value"=double(), level=integer())
-  initial_row <- tibble::data_frame("id"=1, "parent"= NA, "text"="all", "value"=sum(df[value_column]), level=0)
+  initial_row <- tibble::data_frame("id"=1, "parent"= NA, "text"="Total", "value"=sum(df[value_column]), level=0)
   output_df <- dplyr::bind_rows(output_df, initial_row)
   
   already_exists <- function(cat_text, parent_id) {
