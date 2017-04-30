@@ -51,4 +51,4 @@ hierarchicalbubble::hierarchical_bubble(df_l)
 ```
 
 Here's a screenshot of the widget embedded in a Shiny app:
-Screenshot](http://i.imgur.com/AdHQHtX.png)
+![Screenshot](http://i.imgur.com/AdHQHtX.png)

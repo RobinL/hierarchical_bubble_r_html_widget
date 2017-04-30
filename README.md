@@ -27,55 +27,55 @@ only):
 <td align="right">1</td>
 <td align="right">NA</td>
 <td align="left">Total</td>
-<td align="right">3828.1460</td>
+<td align="right">12129.736</td>
 </tr>
 <tr class="even">
 <td align="right">2</td>
 <td align="right">1</td>
-<td align="left">category c</td>
-<td align="right">886.1209</td>
+<td align="left">category b</td>
+<td align="right">2853.758</td>
 </tr>
 <tr class="odd">
 <td align="right">3</td>
 <td align="right">2</td>
-<td align="left">category e</td>
-<td align="right">886.1209</td>
+<td align="left">category d</td>
+<td align="right">2853.758</td>
 </tr>
 <tr class="even">
 <td align="right">4</td>
 <td align="right">3</td>
 <td align="left">category g</td>
-<td align="right">886.1209</td>
+<td align="right">2853.758</td>
 </tr>
 <tr class="odd">
 <td align="right">5</td>
 <td align="right">4</td>
-<td align="left">category k</td>
-<td align="right">886.1209</td>
+<td align="left">category l</td>
+<td align="right">2853.758</td>
 </tr>
 <tr class="even">
 <td align="right">6</td>
 <td align="right">1</td>
-<td align="left">category b</td>
-<td align="right">2942.0250</td>
+<td align="left">category a</td>
+<td align="right">9275.977</td>
 </tr>
 <tr class="odd">
 <td align="right">7</td>
 <td align="right">6</td>
 <td align="left">category f</td>
-<td align="right">2942.0250</td>
+<td align="right">9275.977</td>
 </tr>
 <tr class="even">
 <td align="right">8</td>
 <td align="right">7</td>
 <td align="left">category i</td>
-<td align="right">2942.0250</td>
+<td align="right">9275.977</td>
 </tr>
 <tr class="odd">
 <td align="right">9</td>
 <td align="right">8</td>
 <td align="left">category j</td>
-<td align="right">2942.0250</td>
+<td align="right">9275.977</td>
 </tr>
 </tbody>
 </table>
@@ -96,24 +96,24 @@ rows only):
 <tbody>
 <tr class="odd">
 <td align="left">category b</td>
-<td align="left">category d</td>
-<td align="left">category i</td>
+<td align="left">category e</td>
+<td align="left">category g</td>
 <td align="left">category l</td>
-<td align="right">347.0843</td>
+<td align="right">2339.0279</td>
 </tr>
 <tr class="even">
-<td align="left">category c</td>
-<td align="left">category d</td>
+<td align="left">category b</td>
+<td align="left">category f</td>
 <td align="left">category i</td>
 <td align="left">category j</td>
-<td align="right">4236.8599</td>
+<td align="right">236.1685</td>
 </tr>
 <tr class="odd">
-<td align="left">category c</td>
-<td align="left">category d</td>
-<td align="left">category h</td>
+<td align="left">category a</td>
+<td align="left">category f</td>
+<td align="left">category g</td>
 <td align="left">category j</td>
-<td align="right">7053.6150</td>
+<td align="right">8579.5704</td>
 </tr>
 </tbody>
 </table>
@@ -130,4 +130,4 @@ To see your visualisation use
     hierarchicalbubble::hierarchical_bubble(df_l)
 
 Here's a screenshot of the widget embedded in a Shiny app:
-Screenshot\](<http://i.imgur.com/AdHQHtX.png>)
+![Screenshot](http://i.imgur.com/AdHQHtX.png)
