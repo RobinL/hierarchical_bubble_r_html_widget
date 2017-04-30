@@ -1,7 +1,8 @@
 Hierarchical bubble
 ===================
 
-A hierarchical bubble chart HTML Widget for R implemented in d3v4.
+A zoomable, pannable hierarchical bubble chart HTML Widget for R
+implemented in d3v4.
 
 This is work in progress, but you can find a working example of a Shiny
 app [within the
@@ -27,55 +28,43 @@ only):
 <td align="right">1</td>
 <td align="right">NA</td>
 <td align="left">Total</td>
-<td align="right">12129.736</td>
+<td align="right">8804.544</td>
 </tr>
 <tr class="even">
 <td align="right">2</td>
 <td align="right">1</td>
-<td align="left">category b</td>
-<td align="right">2853.758</td>
+<td align="left">category a</td>
+<td align="right">8804.544</td>
 </tr>
 <tr class="odd">
 <td align="right">3</td>
 <td align="right">2</td>
 <td align="left">category d</td>
-<td align="right">2853.758</td>
+<td align="right">8804.544</td>
 </tr>
 <tr class="even">
 <td align="right">4</td>
 <td align="right">3</td>
 <td align="left">category g</td>
-<td align="right">2853.758</td>
+<td align="right">5921.133</td>
 </tr>
 <tr class="odd">
 <td align="right">5</td>
 <td align="right">4</td>
-<td align="left">category l</td>
-<td align="right">2853.758</td>
+<td align="left">category k</td>
+<td align="right">5921.133</td>
 </tr>
 <tr class="even">
 <td align="right">6</td>
-<td align="right">1</td>
-<td align="left">category a</td>
-<td align="right">9275.977</td>
-</tr>
-<tr class="odd">
-<td align="right">7</td>
-<td align="right">6</td>
-<td align="left">category f</td>
-<td align="right">9275.977</td>
-</tr>
-<tr class="even">
-<td align="right">8</td>
-<td align="right">7</td>
+<td align="right">3</td>
 <td align="left">category i</td>
-<td align="right">9275.977</td>
+<td align="right">2883.411</td>
 </tr>
 <tr class="odd">
-<td align="right">9</td>
-<td align="right">8</td>
-<td align="left">category j</td>
-<td align="right">9275.977</td>
+<td align="right">7</td>
+<td align="right">6</td>
+<td align="left">category l</td>
+<td align="right">2883.411</td>
 </tr>
 </tbody>
 </table>
@@ -95,25 +84,25 @@ rows only):
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">category b</td>
+<td align="left">category c</td>
 <td align="left">category e</td>
 <td align="left">category g</td>
-<td align="left">category l</td>
-<td align="right">2339.0279</td>
+<td align="left">category k</td>
+<td align="right">6760.6001</td>
 </tr>
 <tr class="even">
 <td align="left">category b</td>
-<td align="left">category f</td>
-<td align="left">category i</td>
+<td align="left">category e</td>
+<td align="left">category g</td>
 <td align="left">category j</td>
-<td align="right">236.1685</td>
+<td align="right">4690.3694</td>
 </tr>
 <tr class="odd">
 <td align="left">category a</td>
 <td align="left">category f</td>
-<td align="left">category g</td>
+<td align="left">category i</td>
 <td align="left">category j</td>
-<td align="right">8579.5704</td>
+<td align="right">445.0382</td>
 </tr>
 </tbody>
 </table>

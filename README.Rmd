@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Hierarchical bubble
 
-A hierarchical bubble chart HTML Widget for R implemented in d3v4.
+A zoomable, pannable hierarchical bubble chart HTML Widget for R implemented in d3v4.
 
 This is work in progress, but you can find a working example of a Shiny app [within the repo](https://github.com/RobinL/hierarchical_bubble_r_html_widget/blob/master/example.R).
 
