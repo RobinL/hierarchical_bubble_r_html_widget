@@ -9,7 +9,10 @@ generate_test_data <- function() {
   cats <- paste0("category ", letters)
   
   get_random <- function(x) {
-    paste0(rep("",8), cats[1:x])
+    start <- (x*3) - 2
+    end <- x*3
+    sample(cats[start:end], 40, replace=TRUE)
+    
   }
   
   df <- v %>% 

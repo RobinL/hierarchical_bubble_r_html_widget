@@ -1,0 +1,54 @@
+---
+title: "README"
+author: "Robin Linacre"
+date: "30 April 2017"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Hierarchical bubble
+
+A hierarchical bubble chart HTML Widget for R implemented in d3v4.
+
+This is work in progress, but you can find a working example of a Shiny app [within the repo](https://github.com/RobinL/hierarchical_bubble_r_html_widget/blob/master/example.R).
+
+## Instructions
+
+The widget expects data in the following format (showing first few rows only):
+
+```{r, echo=FALSE}
+df <- hierarchicalbubble::generate_test_data()[1:2,]
+
+names <- paste0("cat_", 1:4)
+df_l <- hierarchicalbubble::wide_to_long_hierarchy(df,names, "val")
+knitr::kable(df_l, options=list(scrollX = TRUE))
+```
+
+However, you're more likely to have data that looks like this (first few rows only):
+
+```{r, echo=FALSE}
+df <- hierarchicalbubble::generate_test_data()[1:3,]
+knitr::kable(df)
+```
+
+So a convenience function is provided that converts between the two:
+
+```{r, eval=FALSE}
+
+df <- hierarchicalbubble::generate_test_data()[1:5,]
+names <- paste0("cat_", 1:4)
+
+df_l <- hierarchicalbubble::wide_to_long_hierarchy(df,names, "val")
+```
+
+To see your visualisation use 
+
+```{r, eval=FALSE}
+hierarchicalbubble::hierarchical_bubble(df_l)
+```
+
+Here's a screenshot of the widget embedded in a Shiny app:
+Screenshot](http://i.imgur.com/AdHQHtX.png)

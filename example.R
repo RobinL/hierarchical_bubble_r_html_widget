@@ -2,20 +2,17 @@ library(shiny)
 library(hierarchicalbubble)
 
 
-shinyApp(
-  ui = fluidPage(
+shiny::shinyApp(
+  ui = shiny::fluidPage(
     
     # Application title
-    titlePanel("hierarchicalbubble"),
+    shiny::titlePanel("Hierarchical bubble chart demo"),
     
     # Sidebar with a slider input for number of bins
-    sidebarLayout(
-      sidebarPanel(
-        
-      ),
-      
+    shiny::verticalLayout(
+    
       # Show a plot of the generated distribution
-      mainPanel(
+      shiny::mainPanel(
         hierarchicalbubble::HBOutput("hb")
       )
     ))
